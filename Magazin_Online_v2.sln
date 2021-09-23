@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magazin_Online_v2", "Magazin_Online_v2\Magazin_Online_v2.csproj", "{2D5CFA7B-DC0D-4185-B29E-4E237875B29E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsForOnlineStore", "TestsForOnlineStore\TestsForOnlineStore.csproj", "{2D8EB6A6-5121-41B4-888C-E39252CFC30B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D5CFA7B-DC0D-4185-B29E-4E237875B29E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D5CFA7B-DC0D-4185-B29E-4E237875B29E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D5CFA7B-DC0D-4185-B29E-4E237875B29E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D5CFA7B-DC0D-4185-B29E-4E237875B29E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D8EB6A6-5121-41B4-888C-E39252CFC30B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D8EB6A6-5121-41B4-888C-E39252CFC30B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D8EB6A6-5121-41B4-888C-E39252CFC30B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D8EB6A6-5121-41B4-888C-E39252CFC30B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CCBACB94-2170-4090-83D0-71C0C33DB03D}
+	EndGlobalSection
+EndGlobal

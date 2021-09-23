@@ -1,0 +1,13 @@
+D:\1_PROGRAMARE\C#\Programare Orientate Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\bin\Debug\netcoreapp3.1\Magazin_Online_v2.exe
+D:\1_PROGRAMARE\C#\Programare Orientate Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\bin\Debug\netcoreapp3.1\Magazin_Online_v2.deps.json
+D:\1_PROGRAMARE\C#\Programare Orientate Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\bin\Debug\netcoreapp3.1\Magazin_Online_v2.runtimeconfig.json
+D:\1_PROGRAMARE\C#\Programare Orientate Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\bin\Debug\netcoreapp3.1\Magazin_Online_v2.runtimeconfig.dev.json
+D:\1_PROGRAMARE\C#\Programare Orientate Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\bin\Debug\netcoreapp3.1\Magazin_Online_v2.dll
+D:\1_PROGRAMARE\C#\Programare Orientate Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\bin\Debug\netcoreapp3.1\Magazin_Online_v2.pdb
+D:\1_PROGRAMARE\C#\Programare Orientate Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\obj\Debug\netcoreapp3.1\Magazin_Online_v2.csprojAssemblyReference.cache
+D:\1_PROGRAMARE\C#\Programare Orientate Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\obj\Debug\netcoreapp3.1\Magazin_Online_v2.AssemblyInfoInputs.cache
+D:\1_PROGRAMARE\C#\Programare Orientate Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\obj\Debug\netcoreapp3.1\Magazin_Online_v2.AssemblyInfo.cs
+D:\1_PROGRAMARE\C#\Programare Orientate Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\obj\Debug\netcoreapp3.1\Magazin_Online_v2.csproj.CoreCompileInputs.cache
+D:\1_PROGRAMARE\C#\Programare Orientate Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\obj\Debug\netcoreapp3.1\Magazin_Online_v2.dll
+D:\1_PROGRAMARE\C#\Programare Orientate Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\obj\Debug\netcoreapp3.1\Magazin_Online_v2.pdb
+D:\1_PROGRAMARE\C#\Programare Orientate Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\obj\Debug\netcoreapp3.1\Magazin_Online_v2.genruntimeconfig.cache
