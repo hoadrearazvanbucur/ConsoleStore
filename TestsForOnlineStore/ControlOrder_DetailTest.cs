@@ -21,7 +21,7 @@ namespace TestsForOnlineStore
 
         public void loadTest()
         {
-            ControlOrder_Detail control = new ControlOrder_Detail();
+            ControlOrderDetail control = new ControlOrderDetail();
             outputHelper.WriteLine(control.afisare());
         }
 
@@ -30,7 +30,7 @@ namespace TestsForOnlineStore
         [Fact]
         public void adaugareTest()
         {
-            ControlOrder_Detail control = new ControlOrder_Detail();
+            ControlOrderDetail control = new ControlOrderDetail();
             control.adaugare(1,1,1);
             outputHelper.WriteLine(control.afisare());
         }
@@ -38,7 +38,7 @@ namespace TestsForOnlineStore
         [Fact]
         public void stergereTest()
         {
-            ControlOrder_Detail control = new ControlOrder_Detail();
+            ControlOrderDetail control = new ControlOrderDetail();
             control.adaugare(1,1,1);
             control.adaugare(2,2,2);
             control.adaugare(3,3,3);
@@ -49,7 +49,7 @@ namespace TestsForOnlineStore
         [Fact]
         public void modificareTest()
         {
-            ControlOrder_Detail control = new ControlOrder_Detail();
+            ControlOrderDetail control = new ControlOrderDetail();
             control.adaugare(1, 1, 1);
             control.adaugare(2, 2, 2);
             control.modificare(1, 1, 0, 2);

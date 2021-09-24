@@ -19,7 +19,7 @@ namespace Magazin_Online_v2
             this.dimensiuneEcran = dimensiuneEcran;
         }
 
-        public Telefoane(string []text) : base("mobila", int.Parse(text[1]), text[2], text[3], double.Parse(text[4]), int.Parse(text[5]))
+        public Telefoane(string []text) : base("telefon", int.Parse(text[1]), text[2], text[3], double.Parse(text[4]), int.Parse(text[5]))
         {
             this.numeTelefon= text[6];
             this.dimensiuneEcran= int.Parse(text[7]);

@@ -51,7 +51,7 @@ namespace TestsForOnlineStore
             ControlProducts control = new ControlProducts();
             control.adaugare(new Product("telefon", 1, "Samsung", "Foarte bun", 12.5, 2));
 
-            control.modificare(new Product("telefon", 2, "Iphone", "Bun", 1.521, 1000), 1);
+            control.modificare(new Product("telefon", 3, "Samsung", "Foarte bun", 12.5, 2), 1);
             outputHelper.WriteLine(control.afisare());
         }
 

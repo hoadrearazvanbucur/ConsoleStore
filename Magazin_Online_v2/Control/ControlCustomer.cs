@@ -17,7 +17,7 @@ namespace Magazin_Online_v2.Clasa
 
         public void load()
         {
-            StreamReader fisier = new StreamReader(@"D:\1_PROGRAMARE\C#\Programare Orientate Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\Fisier\test.txt");
+            StreamReader fisier = new StreamReader(@"D:\1_PROGRAMARE\C#\Programare_Orientate_Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\Fisier\customerFisier.txt");
             string linie;
             while ((linie = fisier.ReadLine())!=null)
             {
@@ -29,7 +29,7 @@ namespace Magazin_Online_v2.Clasa
 
         public void save()
         {
-            StreamWriter fisier = new StreamWriter(@"D:\1_PROGRAMARE\C#\Programare Orientate Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\Fisier\test.txt");
+            StreamWriter fisier = new StreamWriter(@"D:\1_PROGRAMARE\C#\Programare_Orientate_Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\Fisier\customerFisier.txt");
             foreach (Customer customers in this.clienti)
                 fisier.WriteLine(customers.Id+","+customers.Name+","+customers.Password+","+customers.Address);
             fisier.Close();
@@ -81,6 +81,18 @@ namespace Magazin_Online_v2.Clasa
         {
             get => this.clienti;
             set => this.clienti = value;
+        }
+
+        public int nextId()
+        {
+            if (this.clienti.Count > 0)
+            {
+                return this.clienti[this.clienti.Count - 1].Id + 1;
+            }
+            else
+            {
+                return 1;
+            }
         }
     }
 }

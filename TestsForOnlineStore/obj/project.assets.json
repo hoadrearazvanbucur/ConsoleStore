@@ -3879,11 +3879,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\1_PROGRAMARE\\C#\\Programare Orientate Obiect\\Polimorfism\\Magazin_Online_v2\\TestsForOnlineStore\\TestsForOnlineStore.csproj",
+      "projectUniqueName": "D:\\1_PROGRAMARE\\C#\\Programare_Orientate_Obiect\\Polimorfism\\Magazin_Online_v2\\TestsForOnlineStore\\TestsForOnlineStore.csproj",
       "projectName": "TestsForOnlineStore",
-      "projectPath": "D:\\1_PROGRAMARE\\C#\\Programare Orientate Obiect\\Polimorfism\\Magazin_Online_v2\\TestsForOnlineStore\\TestsForOnlineStore.csproj",
+      "projectPath": "D:\\1_PROGRAMARE\\C#\\Programare_Orientate_Obiect\\Polimorfism\\Magazin_Online_v2\\TestsForOnlineStore\\TestsForOnlineStore.csproj",
       "packagesPath": "C:\\Users\\Hoadrea Razvan\\.nuget\\packages\\",
-      "outputPath": "D:\\1_PROGRAMARE\\C#\\Programare Orientate Obiect\\Polimorfism\\Magazin_Online_v2\\TestsForOnlineStore\\obj\\",
+      "outputPath": "D:\\1_PROGRAMARE\\C#\\Programare_Orientate_Obiect\\Polimorfism\\Magazin_Online_v2\\TestsForOnlineStore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -3903,8 +3903,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\1_PROGRAMARE\\C#\\Programare Orientate Obiect\\Polimorfism\\Magazin_Online_v2\\Magazin_Online_v2\\Magazin_Online_v2.csproj": {
-              "projectPath": "D:\\1_PROGRAMARE\\C#\\Programare Orientate Obiect\\Polimorfism\\Magazin_Online_v2\\Magazin_Online_v2\\Magazin_Online_v2.csproj"
+            "D:\\1_PROGRAMARE\\C#\\Programare_Orientate_Obiect\\Polimorfism\\Magazin_Online_v2\\Magazin_Online_v2\\Magazin_Online_v2.csproj": {
+              "projectPath": "D:\\1_PROGRAMARE\\C#\\Programare_Orientate_Obiect\\Polimorfism\\Magazin_Online_v2\\Magazin_Online_v2\\Magazin_Online_v2.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\1_PROGRAMARE\\C#\\Programare Orientate Obiect\\Polimorfism\\Magazin_Online_v2\\Magazin_Online_v2\\Magazin_Online_v2.csproj": {}
+    "D:\\1_PROGRAMARE\\C#\\Programare_Orientate_Obiect\\Polimorfism\\Magazin_Online_v2\\Magazin_Online_v2\\Magazin_Online_v2.csproj": {}
   },
   "projects": {
-    "D:\\1_PROGRAMARE\\C#\\Programare Orientate Obiect\\Polimorfism\\Magazin_Online_v2\\Magazin_Online_v2\\Magazin_Online_v2.csproj": {
+    "D:\\1_PROGRAMARE\\C#\\Programare_Orientate_Obiect\\Polimorfism\\Magazin_Online_v2\\Magazin_Online_v2\\Magazin_Online_v2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\1_PROGRAMARE\\C#\\Programare Orientate Obiect\\Polimorfism\\Magazin_Online_v2\\Magazin_Online_v2\\Magazin_Online_v2.csproj",
+        "projectUniqueName": "D:\\1_PROGRAMARE\\C#\\Programare_Orientate_Obiect\\Polimorfism\\Magazin_Online_v2\\Magazin_Online_v2\\Magazin_Online_v2.csproj",
         "projectName": "Magazin_Online_v2",
-        "projectPath": "D:\\1_PROGRAMARE\\C#\\Programare Orientate Obiect\\Polimorfism\\Magazin_Online_v2\\Magazin_Online_v2\\Magazin_Online_v2.csproj",
+        "projectPath": "D:\\1_PROGRAMARE\\C#\\Programare_Orientate_Obiect\\Polimorfism\\Magazin_Online_v2\\Magazin_Online_v2\\Magazin_Online_v2.csproj",
         "packagesPath": "C:\\Users\\Hoadrea Razvan\\.nuget\\packages\\",
-        "outputPath": "D:\\1_PROGRAMARE\\C#\\Programare Orientate Obiect\\Polimorfism\\Magazin_Online_v2\\Magazin_Online_v2\\obj\\",
+        "outputPath": "D:\\1_PROGRAMARE\\C#\\Programare_Orientate_Obiect\\Polimorfism\\Magazin_Online_v2\\Magazin_Online_v2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

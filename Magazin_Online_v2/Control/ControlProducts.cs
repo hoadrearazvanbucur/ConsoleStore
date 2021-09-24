@@ -16,24 +16,24 @@ namespace Magazin_Online_v2
             load();
         }
 
-        private void load()
+        public void load()
         {
-            string path = @"D:\1_PROGRAMARE\C#\Programare Orientate Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\Fisier\produseFisier.txt";
+            string path = @"D:\1_PROGRAMARE\C#\Programare_Orientate_Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\Fisier\produseFisier.txt";
             StreamReader fisier = new StreamReader(path);
             string linie = "";
             while((linie=fisier.ReadLine())!=null){
-                string[] produs = linie.Split(',');
-                if (produs[0] == "mobila")
-                    produse.Add(new Mobila(produs));
+                string[] linieSplit = linie.Split(',');
+                if (linieSplit[0] == "mobila")
+                    produse.Add(new Mobila(linieSplit));
                 else
-                    if (produs[0] == "telefon")
-                        produse.Add(new Telefoane(produs));
+                    if (linieSplit[0] == "telefon")
+                    produse.Add(new Telefoane(linieSplit));
             }
         }
 
         private void save()
         {
-            string path = @"D:\1_PROGRAMARE\C#\Programare Orientate Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\Fisier\produseFisier.txt";
+            string path = @"D:\1_PROGRAMARE\C#\Programare_Orientate_Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\Fisier\produseFisier.txt";
             StreamWriter fisier = new StreamWriter(path);
             foreach(Product produs in produse){
                 string text = "";
@@ -41,7 +41,7 @@ namespace Magazin_Online_v2
                     text = produs.Categorie + "," + produs.Id + "," + produs.Name + "," + produs.Description + "," + produs.Price + "," + produs.Stock + ",";
                 else
                     if (produs.Categorie == "telefon")
-                    text = produs.Categorie + "," + produs.Id + "," + produs.Name + "," + produs.Description + "," + produs.Price + "," + produs.Stock;
+                    text = produs.Categorie + "," + produs.Id + "," + produs.Name + "," + produs.Description + "," + produs.Price + "," + produs.Stock +",";
                 fisier.WriteLine(text);
             }
         }
@@ -50,7 +50,7 @@ namespace Magazin_Online_v2
         {
             string afis = "";
             foreach (Product produs in produse)
-            {     
+            {
                 if (produs is Mobila)
                 {
                     Mobila m = produs as Mobila;
@@ -60,19 +60,19 @@ namespace Magazin_Online_v2
                     afis += "Descriere: " + m.Description + "\n";
                     afis += "Pret: " + m.Price + "\n";
                     afis += "Stoc: " + m.Stock + "\n";
-                    afis += m;
+                    afis += m.ToString();
                 }
                 else
                     if(produs is Telefoane)
                     {
-                        Telefoane t = produs as Telefoane;
-                    afis += "Categorie: " + t.Categorie + "\n";
-                    afis += "ID: " + t.Id + "\n";
-                    afis += "Nume: " + t.Name + "\n";
-                    afis += "Descriere: " + t.Description + "\n";
-                    afis += "Pret: " + t.Price + "\n";
-                    afis += "Stoc: " + t.Stock + "\n";
-                    afis += t;
+                       Telefoane t = produs as Telefoane;
+                        afis += "Categorie: " + t.Categorie + "\n";
+                        afis += "ID: " + t.Id + "\n";
+                        afis += "Nume: " + t.Name + "\n";
+                        afis += "Descriere: " + t.Description + "\n";
+                        afis += "Pret: " + t.Price + "\n";
+                        afis += "Stoc: " + t.Stock + "\n";
+                        afis += t.ToString();
                     }
 
             }
@@ -135,6 +135,18 @@ namespace Magazin_Online_v2
 
                 if (produs.Stock != -1)
                     produse[pozId(id)].Stock = produs.Stock;
+            }
+        }
+
+        public int nextId()
+        {
+            if (this.produse.Count > 0)
+            {
+                return this.produse[this.produse.Count - 1].Id + 1;
+            }
+            else
+            {
+                return 1;
             }
         }
 

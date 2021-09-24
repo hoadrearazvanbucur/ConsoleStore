@@ -4,13 +4,13 @@ using System.Text;
 
 namespace Magazin_Online_v2
 {
-    public class Order_Detail
+    public class OrderDetail
     {
         private int id;
         private double price;
         private int quantity;
 
-        public Order_Detail(int id, double price, int quantity)
+        public OrderDetail(int id, double price, int quantity)
         {
             this.id = id;
             this.price = price;
@@ -28,7 +28,7 @@ namespace Magazin_Online_v2
 
         public override bool Equals(object obj)
         {
-            Order_Detail detaliiComanda = obj as Order_Detail;
+            OrderDetail detaliiComanda = obj as OrderDetail;
             return true;
         }
 

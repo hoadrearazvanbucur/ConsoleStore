@@ -7,7 +7,7 @@ namespace Magazin_Online_v2
     public class Mobila : Product
     {
         private string numeMobila;
-        private string culoare;
+        private string culoare; 
         private int lungime;
         private int latime;
         private int inaltime;
@@ -27,7 +27,7 @@ namespace Magazin_Online_v2
             this.culoare= text[7];
             this.lungime= int.Parse(text[8]);
             this.latime= int.Parse(text[9]);
-            this.inaltime= int.Parse(text[10]);
+            this.inaltime = int.Parse(text[10]);
         }
 
         public override string ToString()

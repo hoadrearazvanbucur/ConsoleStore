@@ -17,7 +17,7 @@ namespace Magazin_Online_v2.Clasa
 
         public void load()
         {
-            StreamReader fisier = new StreamReader(@"D:\1_PROGRAMARE\C#\Programare Orientate Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\Fisier\test.txt");
+            StreamReader fisier = new StreamReader(@"D:\1_PROGRAMARE\C#\Programare_Orientate_Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\Fisier\orderFisier.txt");
             string linie = fisier.ReadLine();
             while ((linie = fisier.ReadLine()) != null)
             {
@@ -30,7 +30,7 @@ namespace Magazin_Online_v2.Clasa
 
         public void save()
         {
-            StreamWriter fisier = new StreamWriter(@"D:\1_PROGRAMARE\C#\Programare Orientate Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\Fisier\test.txt");
+            StreamWriter fisier = new StreamWriter(@"D:\1_PROGRAMARE\C#\Programare_Orientate_Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\Fisier\orderFisier.txt");
             foreach (Order orders in this.comenzi)
                 fisier.WriteLine(orders.Id+", "+orders.Ammount+","+orders.Order_Address+","+orders.Order_Status);
         }
@@ -81,6 +81,19 @@ namespace Magazin_Online_v2.Clasa
         {
             get => this.comenzi;
             set => this.comenzi = value;
+        }
+
+
+        public  int nextId()
+        {
+            if (this.comenzi.Count > 0)
+            {
+                return this.comenzi[this.comenzi.Count - 1].Id + 1;
+            }
+            else
+            {
+                return 1;
+            }
         }
     }
 }

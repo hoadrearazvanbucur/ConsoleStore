@@ -21,6 +21,14 @@ namespace Magazin_Online_v2
             this.description = description;
             this.stock = stock;
             this.categorie = categorie;
+            
+            //Console.WriteLine(this.categorie);
+            //if (this.categorie == "mobila")
+            //{
+            //    Console.WriteLine(ToString());
+            //    Mobila m = this as Mobila;
+            //    Console.WriteLine(ToString());
+            //}
         }
 
         public override string ToString()
