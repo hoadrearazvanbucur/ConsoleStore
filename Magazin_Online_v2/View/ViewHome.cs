@@ -7,25 +7,23 @@ namespace Magazin_Online_v2.View
 {
     public class ViewHome
     {
-        private  ControlProducts controlProduscts;
-
-        private ControlOrder controlOrder;
-
-
-        private ControlOrderDetail controlDetail;
-
-
         private Customer customer;
-
-
+        private ControlProducts controlProducts;
+        private ControlOrder controlOrder;
+        private ControlOrderDetail controlDetail;
         private Order order;
 
-
-
-
-        public ViewHome( Customer customer)
+        public ViewHome(Customer customer)
         {
-          
+
+            this.customer = customer;
+            this.controlProducts = new ControlProducts();
+            this.controlOrder = new ControlOrder();
+            this.controlDetail = new ControlOrderDetail();
+            this.order = new Order(controlOrder.nextId(),customer.Address,1);
+
+
+            
         }
 
         public void meniu()
@@ -46,15 +44,8 @@ namespace Magazin_Online_v2.View
                     case 1:
                         viewAfisare();
                         break;
-                    case 2:
-                        viewAdaugare();
-                        break;
-                    case 3:
-                        viewStergere();
-                        break;
-                    case 4:
-                        viewModificare();
-                        break;
+                   
+                 
                 }
                 meniu();
                 n = int.Parse(Console.ReadLine());
