@@ -8,26 +8,25 @@ namespace Magazin_Online_v2
     public class ControlProducts
     {
 
-        List<Product> produse;
+        List<Product> products;
 
         public ControlProducts()
         {
-            produse = new List<Product>();
+            products = new List<Product>();
             load();
         }
 
         public void load()
         {
-            string path = @"D:\1_PROGRAMARE\C#\Programare_Orientate_Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\Fisier\produseFisier.txt";
-            StreamReader fisier = new StreamReader(path);
+            StreamReader fisier = new StreamReader(@"D:\1_PROGRAMARE\C#\Programare_Orientate_Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\Fisier\produseFisier.txt");
             string linie = "";
             while((linie=fisier.ReadLine())!=null){
                 string[] linieSplit = linie.Split(',');
                 if (linieSplit[0] == "mobila")
-                    produse.Add(new Mobila(linieSplit));
+                    products.Add(new Mobila(linieSplit));
                 else
                     if (linieSplit[0] == "telefon")
-                    produse.Add(new Telefoane(linieSplit));
+                        products.Add(new Telefon(linieSplit));
             }
         }
 
@@ -35,13 +34,17 @@ namespace Magazin_Online_v2
         {
             string path = @"D:\1_PROGRAMARE\C#\Programare_Orientate_Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\Fisier\produseFisier.txt";
             StreamWriter fisier = new StreamWriter(path);
-            foreach(Product produs in produse){
+            foreach(Product produse in products){
                 string text = "";
-                if (produs.Categorie == "mobila")
-                    text = produs.Categorie + "," + produs.Id + "," + produs.Name + "," + produs.Description + "," + produs.Price + "," + produs.Stock + ",";
+                if (produse.Categorie == "mobila"){
+                    Mobila m = produse as Mobila;
+                    text += m.Categorie +" " + m.Id + " " + m.Name + " " + m.Description + " " + m.Date + " " + m.Image + " " + m.Price + " " + m.Stock;
+                }
                 else
-                    if (produs.Categorie == "telefon")
-                    text = produs.Categorie + "," + produs.Id + "," + produs.Name + "," + produs.Description + "," + produs.Price + "," + produs.Stock +",";
+                    if (produse.Categorie == "telefon"){
+                        Telefon t = produse as Telefon;
+                        text += t.Categorie + " " + t.Id + " " + t.Name + " " + t.Description + " " + t.Date + " " + t.Image + " " + t.Price + " " + t.Stock;
+                    }    
                 fisier.WriteLine(text);
             }
         }
@@ -63,9 +66,9 @@ namespace Magazin_Online_v2
                     afis += m.ToString();
                 }
                 else
-                    if(produs is Telefoane)
+                    if(produs is Telefon)
                     {
-                       Telefoane t = produs as Telefoane;
+                       Telefon t = produs as Telefon;
                         afis += "Categorie: " + t.Categorie + "\n";
                         afis += "ID: " + t.Id + "\n";
                         afis += "Nume: " + t.Name + "\n";

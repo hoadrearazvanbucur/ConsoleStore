@@ -4,14 +4,14 @@ using System.Text;
 
 namespace Magazin_Online_v2
 {
-    public class Telefoane : Product
+    public class Telefon : Product
     {
         private string numeTelefon;
         private int dimensiuneEcran;
         private int stocare;
         private int capacitateBaterie;
 
-        public Telefoane(int id, string name, string description, double price, int stock, string numeTelefon, int dimensiuneEcran,int stocare, int capacitateBaterie) : base("telefon",id,name, description,price, stock)
+        public Telefon(int id, string name, string description, double price, int stock, string numeTelefon, int dimensiuneEcran,int stocare, int capacitateBaterie) : base("telefon",id,name, description,price, stock)
         {
             this.numeTelefon = numeTelefon;
             this.capacitateBaterie = capacitateBaterie;
@@ -19,7 +19,7 @@ namespace Magazin_Online_v2
             this.dimensiuneEcran = dimensiuneEcran;
         }
 
-        public Telefoane(string []text) : base("telefon", int.Parse(text[1]), text[2], text[3], double.Parse(text[4]), int.Parse(text[5]))
+        public Telefon(string []text) : base("telefon", int.Parse(text[1]), text[2], text[3], double.Parse(text[4]), int.Parse(text[5]))
         {
             this.numeTelefon= text[6];
             this.dimensiuneEcran= int.Parse(text[7]);
@@ -40,7 +40,7 @@ namespace Magazin_Online_v2
 
         public override bool Equals(object obj)
         {
-            Telefoane telefon = obj as Telefoane;
+            Telefon telefon = obj as Telefon;
             return true;
         }
 

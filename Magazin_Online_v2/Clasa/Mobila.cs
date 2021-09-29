@@ -12,22 +12,22 @@ namespace Magazin_Online_v2
         private int latime;
         private int inaltime;
 
-        public Mobila(int id, string name, string description, double price, int stock, string numeMobila,string culoare,int lungime,int latime,int inaltime) : base("mobila",id,name,description, price, stock)
+        public Mobila(int id, string name, string description, string date, string image, double price, int stock, string numeMobila,string culoare,int lungime,int latime,int inaltime) : base("mobila",id,name,description,date,image,price,stock)
         {
             this.numeMobila = numeMobila;
             this.culoare = culoare;
             this.lungime = lungime;
-            this.inaltime = inaltime;
             this.latime = latime;
+            this.inaltime = inaltime;
         }
 
-        public Mobila(string[] text):base("mobila",int.Parse(text[1]),text[2],text[3],double.Parse(text[4]),int.Parse(text[5]))
+        public Mobila(string[] text):base("mobila",int.Parse(text[1]),text[2],text[3],text[4],text[5],double.Parse(text[6]),int.Parse(text[7]))
         {
-            this.numeMobila = text[6];
-            this.culoare= text[7];
-            this.lungime= int.Parse(text[8]);
-            this.latime= int.Parse(text[9]);
-            this.inaltime = int.Parse(text[10]);
+            this.numeMobila = text[8];
+            this.culoare= text[9];
+            this.lungime= int.Parse(text[10]);
+            this.latime= int.Parse(text[11]);
+            this.inaltime = int.Parse(text[12]);
         }
 
         public override string ToString()
