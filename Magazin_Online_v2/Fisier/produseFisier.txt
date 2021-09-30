@@ -1,4 +1,3 @@
-﻿telefon,1,Samsung,Foarte Bun,12.4,1,S20,5,256,6000
-telefon,2,Iphone,Calitate superioara,42.5,2,12,4,128,5200
-mobila,3,Masa,Sticla,42.5,3,Dedeman,argintiu,4,2,5
-mobila,4,Scaun,Lemn Masiv,26.3,4,Dedeman,maro,5,1,7
+﻿categorie, int id, string name, string description, string date, string image, double price, int stock, string numeMobila, string culoare, int lungime, int latime, int inaltime
+categorie, int id, string name, string description, string date, string image, double price, int stock, string numeTelefon, int dimensiuneEcran,int stocare, int capacitateBaterie
+
