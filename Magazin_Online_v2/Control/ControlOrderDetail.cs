@@ -21,8 +21,8 @@ namespace Magazin_Online_v2.Clasa
             string linie = fisier.ReadLine();
             while ((linie = fisier.ReadLine()) != null)
             {
-                string[] x = linie.Split(',');
-                detaliiComanda.Add(new OrderDetail(int.Parse(x[0]),double.Parse( x[1]), int.Parse(x[2])));
+                string[] x = linie.Split(','); 
+                detaliiComanda.Add(new OrderDetail(int.Parse(x[0]), int.Parse(x[1]), int.Parse(x[2]),double.Parse( x[3]), int.Parse(x[4])));
                 linie = fisier.ReadLine();
             }
         }
@@ -35,9 +35,9 @@ namespace Magazin_Online_v2.Clasa
         }
 
 
-        public void adaugare(int id, double price, int quantity)
+        public void adaugare(int id, int order_id, int product_id, double price, int quantity)
         {
-            this.detaliiComanda.Add(new OrderDetail(id, price, quantity));
+            this.detaliiComanda.Add(new OrderDetail(id,order_id,product_id, price, quantity));
         }
 
         public void stergere(int id)
@@ -45,12 +45,14 @@ namespace Magazin_Online_v2.Clasa
             this.detaliiComanda.RemoveAt(pozId(id));
         }
 
-        public void modificare(int id, double price, int quantity, int idC)
+        public void modificare(int id, int order_id, int product_id, double price, int quantity, int idC)
         {
             foreach (OrderDetail detaliiComenzi in this.detaliiComanda)
                 if (detaliiComenzi.Id == idC)
                 {
                     if (id != 0) detaliiComenzi.Id = id;
+                    if (order_id != 0) detaliiComenzi.Order_id = order_id;
+                    if (product_id != 0) detaliiComenzi.Product_id = product_id;
                     if (price != 0) detaliiComenzi.Price = price;
                     if (quantity != 0) detaliiComenzi.Quantity = quantity;
                 }

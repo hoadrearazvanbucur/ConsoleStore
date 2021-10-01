@@ -22,7 +22,7 @@ namespace Magazin_Online_v2.Clasa
             while ((linie = fisier.ReadLine()) != null)
             {
                 string[] x = linie.Split(',');
-                comenzi.Add(new Order(int.Parse(x[0]),int.Parse( x[1]), x[2], int.Parse(x[3])));
+                comenzi.Add(new Order(int.Parse(x[0]),int.Parse( x[1]),int.Parse( x[2]), x[3]));
                 linie = fisier.ReadLine();
             }
             fisier.Close();
@@ -32,12 +32,12 @@ namespace Magazin_Online_v2.Clasa
         {
             StreamWriter fisier = new StreamWriter(@"D:\1_PROGRAMARE\C#\Programare_Orientate_Obiect\Polimorfism\Magazin_Online_v2\Magazin_Online_v2\Fisier\orderFisier.txt");
             foreach (Order orders in this.comenzi)
-                fisier.WriteLine(orders.Id+", "+orders.Ammount+","+orders.Order_Address+","+orders.Order_Status);
+                fisier.WriteLine(orders.Id+", "+orders.Ammount+","+orders.Order_Address+","+orders.Custormer_id);
         }
 
-        public void adaugare(int id, int ammount, string order_address, int order_status)
+        public void adaugare(int id, int ammount, string order_address, int customer_id)
         {
-            this.comenzi.Add(new Order(id, ammount, order_address, order_status));
+            this.comenzi.Add(new Order(id,customer_id,ammount,order_address));
         }
 
         public void stergere(int id)
@@ -45,7 +45,7 @@ namespace Magazin_Online_v2.Clasa
             this.comenzi.RemoveAt(pozId(id));
         }
 
-        public void modificare(int id, int ammount, string order_address, int order_status, int idC)
+        public void modificare(int id, int ammount, string order_address, int customer_id, int idC)
         {
             foreach (Order orders in this.comenzi)
                 if (orders.Id == idC)
@@ -53,7 +53,7 @@ namespace Magazin_Online_v2.Clasa
                     if (id != 0) orders.Id = id;
                     if (ammount != -1) orders.Ammount = ammount;
                     if (order_address != "") orders.Order_Address = order_address;
-                    if (order_status != -1) orders.Order_Status = order_status;
+                    if (customer_id != -1) orders.Custormer_id = customer_id;
                 }
         }
 

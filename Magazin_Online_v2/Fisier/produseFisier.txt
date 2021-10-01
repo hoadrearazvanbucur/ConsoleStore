@@ -1,3 +1,1 @@
-﻿categorie, int id, string name, string description, string date, string image, double price, int stock, string numeMobila, string culoare, int lungime, int latime, int inaltime
-categorie, int id, string name, string description, string date, string image, double price, int stock, string numeTelefon, int dimensiuneEcran,int stocare, int capacitateBaterie
-
+﻿

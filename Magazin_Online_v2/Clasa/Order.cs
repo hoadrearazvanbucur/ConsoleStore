@@ -7,25 +7,27 @@ namespace Magazin_Online_v2
     public class Order
     {
         private int id;
+        private int customer_id;
         private int ammount;
         private string order_address;
-        private int order_status;
 
-        public Order(int id, int ammount, string order_address, int order_status)
+
+        public Order(int id, int customer_id,int ammount, string order_address)
         {
             this.id = id;
             this.ammount = ammount;
             this.order_address = order_address;
-            this.order_status = order_status;
+            this.customer_id = customer_id;
         }
+
 
         public override string ToString()
         {
             string afis = "";
             afis += "ID: " + this.id + "\n";
-            afis += "Cantitate: " + this.ammount + "\n";
+            afis += "Id cumparator: " + this.customer_id + "\n";
             afis += "Adresa cumparator: " + this.order_address + "\n";
-            afis += "Status comanda: " + this.order_status + "\n";
+            afis += "Cantitate: " + this.ammount + "\n";
             return afis;
         }
 
@@ -34,6 +36,7 @@ namespace Magazin_Online_v2
             Order comanda = obj as Order;
             return true;
         }
+
 
         public int Id
         {
@@ -50,10 +53,10 @@ namespace Magazin_Online_v2
             get => this.order_address;
             set => this.order_address = value;
         }
-        public int Order_Status
+        public int Custormer_id
         {
-            get => this.order_status;
-            set => this.order_status = value;
+            get => this.customer_id;
+            set => this.customer_id = value;
         }
     }
 }
