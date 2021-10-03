@@ -924,15 +924,34 @@
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
       },
+      "MagazinOnline/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/MagazinOnline.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MagazinOnline.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
       "Magazin_Online_v2/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MagazinOnline": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Magazin_Online_v2.dll": {}
         },
         "runtime": {
           "bin/placeholder/Magazin_Online_v2.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
       }
     }
   },
@@ -3857,6 +3876,11 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
+    "MagazinOnline/1.0.0": {
+      "type": "project",
+      "path": "../../MagazinOnline/MagazinOnline/MagazinOnline.csproj",
+      "msbuildProject": "../../MagazinOnline/MagazinOnline/MagazinOnline.csproj"
+    },
     "Magazin_Online_v2/1.0.0": {
       "type": "project",
       "path": "../Magazin_Online_v2/Magazin_Online_v2.csproj",
@@ -3950,6 +3974,9 @@
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
